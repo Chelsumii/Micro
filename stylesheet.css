@@ -1,0 +1,96 @@
+/*1920 x 9850*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#container
+{
+  min-height: 900vh;
+}
+.row1, .row2, .row3, .row4
+{
+  background: #F8ECC2;
+}
+.row5, .row6, .footer
+{
+  background: #07B6D5;
+}
+.row1, .row5, .row6
+{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.row2
+{
+  display: flex;
+  min-height: 300vh;
+  justify-content: center;
+  align-items: center;
+}
+.row3, .row4, .footer
+{
+  display: flex;
+  min-height: 100vh;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+}
+.fish, .trash
+{
+  position: absolute;
+}
+.fish
+{
+  transform: scale(40%, 40%);
+}
+.flex-container 
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+}
+.colLeft, .colRight
+{
+  padding: 5%;
+  flex: 50%;
+}
+.colRight
+{
+  text-align: justify;
+  padding: 5%;
+}
+.title h2
+{
+  position: absolute;
+  color:  #fff;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+}
+.title h2:nth-child(1)
+{
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+.title h2:nth-child(2)
+{
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate
+{
+  0%,100%
+  {
+    clip-path: polygon(0% 36%, 10% 44%, 24% 48%, 36% 45%, 48% 37%, 59% 32%, 75% 29%, 89% 34%, 100% 43%, 100% 100%, 0% 100%);
+  }
+  50%
+  {
+    clip-path: polygon(0 42%, 11% 35%, 23% 32%, 37% 36%, 50% 44%, 62% 50%, 76% 53%, 89% 49%, 100% 43%, 100% 100%, 0% 100%);
+  }
+}
+
