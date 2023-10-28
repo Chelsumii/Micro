@@ -7,6 +7,12 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+p
+{
+  padding: 10%;
+  text-align: justify;
+  font-size: 30px;
+}
 #container
 {
   min-height: 900vh;
@@ -93,4 +99,7 @@
     clip-path: polygon(0 42%, 11% 35%, 23% 32%, 37% 36%, 50% 44%, 62% 50%, 76% 53%, 89% 49%, 100% 43%, 100% 100%, 0% 100%);
   }
 }
-
+.glider-prev, .glider-next
+{
+  margin: 5%;
+}
