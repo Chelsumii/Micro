@@ -16,9 +16,25 @@
 </head>
 
 <body>
-  <div id="container">
     
-    <div class="row1">
+  <!--------------------Navigation----------------------->
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><sl-icon name="list"></sl-icon></label>
+    <div class="wrapper">
+      <ul class="menu">
+        <li><a href="#row1">Home</a></li>
+        <li><a href="#row2">Microplastic?</a></li>
+        <li><a href="#row3">Impact</a></li>
+        <li><a href="#row5">Solutions</a></li>
+        <li><a href="#row6">Showcase</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+    <!------------------------------------------------>
+    
+  <div id="container">
+    <!--------------------Title----------------------->
+    <div id="row1">
       <div class="title">
 
         <h2>MicroChange</h2>
@@ -26,77 +42,158 @@
 
       </div>
     </div>
+    <!--------------------Scrolling Text - Fish Shock Effect----------------------->
+    <div id="row2">
 
-    <div class="row2">
+      <div class="scroll">
+        <div class="RightToLeft">
+          <h3>
+            Every year, 8 million tonnes of plastic ends up in the ocean.
+          </h3>
+          <h3>
+            This issue harms marine life and even so it still goes ignored.
+          </h3>
+          <h3>
+            However, this addition in the diet of sea life affects us as well. 
+          </h3>
+          <h3>
+            Without noticing, these small plastic particles we 
+            consume are what is called 'microplastic'.
+          </h3> 
+        </div>
+      </div>
         
       <div class="fish">
         <img src="images/fish.png" alt="fish">
       </div>
-        
+
       <div class="trash">
         <img src="svgs/trash.svg" alt="trash" width=1200>
       </div>
 
     </div>
-
-    <div class="row3">
+    <!--------------------Flexbox Infomation - Beach----------------------->
+    <div id="row3">
       <div class="flex-container">
         <div class="colLeft">
           <img src="images/beachSpot.png" alt="beachSpot" width="100%">
         </div>
-        <div class="colRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="colRight">
+          <p>
+            Microplastics are considered this when plastic particles are 
+            smaller than 5mm. Ultimately, microplastics can be found in a variety of settings, including 
+            the oceans, rivers, lakes, soil, air, and even some food sources. They represent 
+            substantial environmental and possibly health problems as microplastic can 
+            survive in the environment for long periods of time, are consumed 
+            by wildlife, and eventually reach the human food chain.
+          </p>
+        </div>
       </div>
     </div>
-
-    <div class="row4">
+    <!--------------------SVG Wave Annimation----------------------->
+    <div id="row4">
       <img src="svgs/waves.svg" alt="waves" width="100%">
     </div>
+    <!--------------------Particle Animation - Underwater----------------------->
+    <div id="row5">
 
-    <div class="row5">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div id="underwater"></div>
+
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+      <div class="text5">
+        <p>
+          We can help prevent this by cleaning up our local 
+          beaches and environments and join groups to help 
+          tackle the problem on a larger scale!
+        </p>
+      </div>
+      
     </div>
-    <div class="row6">
+    <!--------------------Image Slider - Gallery----------------------->
+    <div id="row6">
 
       <div class="glider-contain multiple">
 
         <button class="glider-prev">
-          <!-- Add Shoelace UI Prev arrow button??-->
           <sl-icon name="chevron-double-left"></sl-icon>
         </button>
         <div class="glider">
-          <img class="slider-image" src="https://source.unsplash.com/1920x1280/?animal" alt="Slider">
-          <img class="slider-image" src="https://source.unsplash.com/1920x1280/?nature" alt="Slider">
-          <img class="slider-image" src="https://source.unsplash.com/1920x1280/?people" alt="Slider">
-          <img class="slider-image" src="https://source.unsplash.com/1920x1280/?fruits" alt="Slider">
-          <img class="slider-image" src="https://source.unsplash.com/1920x1280/?travel" alt="Slider">
+          <img class="slider-image" src="images/adults.jpg" alt="Slider">
+          <img class="slider-image" src="images/diver.jpg" alt="Slider">
+          <img class="slider-image" src="images/clean.jpg" alt="Slider">
+          <img class="slider-image" src="images/kids.jpg" alt="Slider">
+          <img class="slider-image" src="images/organisation.jpg" alt="Slider">
         </div>
 
         <button class="glider-next">
-          <!-- Add Shoelace UI Next arrow button??-->
           <sl-icon name="chevron-double-right"></sl-icon>
         </button>
 
         <div id="dots" class="glider-dots"></div>
       </div>
 
-    </div>
+      <div class="callToAction">
+        <p>
+          Big thanks to the those taking part to make the world a cleaner place!
+        </p>
+        <div class="ctaBtn">
+          <sl-button size="medium" pill href="#footer">Take Part Here!</sl-button>
+        </div>
+      </div>
 
-    <div class="footer">
+    </div>
+    <!--------------------Flexbox - Footer----------------------->
+    <div id="footer">
+
+      <div class="flex-container">
+        <div class="colLeft">
+          <h2>More Information</h2>
+          <div>
+            <a href="https://www.plasticsforchange.org/">https://www.plasticsforchange.org/</a>
+          </div>
+          <div>
+            <a href="https://www.theclimatepledge.com">https://www.theclimatepledge.com</a>
+          </div>
+          <div>
+            <a href="https://wavetotable.com/">https://wavetotable.com/</a>
+          </div>
+        </div>
+        <div class="colRight">
+          <h2>Social Media</h2>
+          <div class="socialMediaBtn">
+
+            <sl-avatar label="Email">
+            <sl-icon slot="icon" name="threads"></sl-icon>
+            </sl-avatar>
+
+            <sl-avatar label="Facebook">
+              <sl-icon slot="icon" name="facebook"></sl-icon>
+            </sl-avatar>
+
+            <sl-avatar label="Instagram">
+              <sl-icon slot="icon" name="instagram"></sl-icon>
+            </sl-avatar>
+
+            <sl-avatar label="Tiktok">
+              <sl-icon slot="icon" name="tiktok"></sl-icon>
+              </sl-avatar>
+  
+              <sl-avatar label="Youtube">
+                <sl-icon slot="icon" name="youtube"></sl-icon>
+              </sl-avatar>
+              
+          </div>
+        </div>
+      </div>]
+
       <div class="coral">
         <img src="images/coral.png" alt="coral" width="100%">
       </div>
     </div>
-
-    
-
   </div>
-    
+  <!--------------------------------------------------------------->
+
   <script src="glider.min.js"></script>
   <script src="main.js"></script>
 
